@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="css/ie.css" />-->
+		<!--<meta content-type="text/x-component" />-->
+		<meta http-equiv="content-type"content="text/x-component">
+		<script src="js/html5shiv.js"></script>
+		<style>
+			.tnew_ie_css_radius{
+				margin: 0 auto;
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				background-color: red;
+			}
+			header{
+				margin: 20px auto;
+				width: 200px;
+				height: 200px;
+				background-color: green;
+			}
+			section{
+				margin: 20px auto;
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+			}
+			footer{
+				margin: 20px auto;
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		
+		<!--
+			
+			
+			
+		-->
+		
+		<header>header</header>
+		<section>section</section>
+		<footer>footer</footer>
+		
+		<div class="tnew_ie_css_radius">
+			<p>123</p>
+		</div>
+	</body>
+	<script src="js/PIE.js"></script>
+	
+	<script>
+		
+		var css_radius = document.querySelectorAll(".tnew_ie_css_radius");
+		for(var i=0;i<css_radius.length;i++){
+			PIE.attach(css_radius[i]);
+		}
+		
+	</script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>json:server</title>
+	</head>
+	<body>
+		1.npm install -g json-server
+		2.创建一个文件夹 cd 进入
+		3.npm init       
+			会初始化（创建）一个	package.json
+		4.npm install json-server --save
+			package.json里	会出现	"dependencies": {"json-server": "^0.14.0"}
+		5.更改启动方式
+			"scripts": {"test": "echo \"Error: no test specified\" && exit 1"}
+			改为
+			"scripts": {"json:server": "json-server --watch db.json"}
+		6.创建一个 db.json 并写入数据
+		7.启动json-server   npm run json:server
+			Resources
+				http://localhost:3000/users
+				http://localhost:3000/companies
+			Home
+				http://localhost:3000
+		8.postman 中测试
+		9.配置
+			"scripts": {"json:server": "json-server --watch db.json","json:server:remote": "json-server http://jsonplaceholder.typicode.com/db"},
+			
+			npm run json:server:remote
+	</body>
+</html>

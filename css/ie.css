@@ -1,0 +1,33 @@
+/*兼容ie*/
+
+/*
+ * ie 678 实现css3的圆角和阴影效果	   引入下面这一行
+ * 
+ * behavior: url(js/ie-css3.htc);
+ * 
+ * 阴影颜色	默认黑色
+ * 
+ * 使用阴影	需要加背景色
+ * 
+ * 
+ */
+
+
+div{
+	
+	width: 300px;
+	height: 300px;
+	background: #fff;
+	overflow: hidden;
+	float: left;
+	
+    -moz-border-radius: 15px;                /* Firefox */
+    -webkit-border-radius: 15px;             /* Safari and Chrome */
+    border-radius: 15px;                     /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */
+ 
+    -moz-box-shadow: 10px 10px 20px #000;    /* Firefox */
+    -webkit-box-shadow: 10px 10px 20px #000; /* Safari and Chrome */
+    box-shadow: 10px 10px 20px #000;         /* Opera 10.5+, future browsers and IE6+ using IE-CSS3 */
+ 
+    behavior: url(js/ie-css3.htc);              /* This lets IE know to call the script on all elements which get the 'box' class */
+}
